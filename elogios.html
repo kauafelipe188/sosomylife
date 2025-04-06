@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>só elogios pra você</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 class="titulo">coisas que eu amo em você 💘</h1>
+    <p class="subtitulo">clique no botão e descubra (de novo e de novo 💭)</p>
+    
+    <p class="texto" id="elogio">você é incrível em todos os sentidos</p>
+    
+    <button class="botao" onclick="sortearElogio()">me elogia de novo</button>
+    <br>
+    <a class="botao" href="futuro.html">próxima página</a>
+  </div>
+
+  <script>
+    const elogios = [
+    "Seu jeito me faz sorrir até nos dias mais difíceis.",
+    "Você tem um coração enorme e lindo, cheio de bondade.",
+    "Te ouvir falar é como um abraço que acalma minha alma.",
+    "A forma como você cuida de mim é única e especial.",
+    "Você é linda de todas as formas possíveis, por dentro e por fora.",
+    "Sua maneira de enxergar a vida me inspira a ser uma pessoa melhor todos os dias.",
+    "Sou completamente apaixonado por cada detalhe seu.",
+    "O jeito que você me entende e me apoia me faz sentir verdadeiramente amado.",
+    "Amar você é a coisa mais natural e linda do mundo pra mim.",
+    "Seu sorriso ilumina até os dias mais cinzentos.",
+    "O brilho dos seus olhos é hipnotizante e cheio de vida.",
+    "Você é uma combinação perfeita de força e delicadeza.",
+    "O carinho que você demonstra me faz sentir especial e querido.",
+    "Sua energia contagiante faz qualquer momento ao seu lado ser incrível.",
+    "Você torna qualquer lugar mais bonito só de estar presente.",
+    "O jeito como você se importa com os outros mostra o quão incrível você é.",
+    "Seu riso é a melhor melodia que meus ouvidos já ouviram.",
+    "A forma como você vê o mundo é inspiradora e encantadora.",
+    "Estar ao seu lado faz tudo parecer mais leve e feliz.",
+    "Você faz meu coração bater mais forte só de pensar em você."
+];
+
+
+
+    function sortearElogio() {
+      const index = Math.floor(Math.random() * elogios.length);
+      document.getElementById('elogio').textContent = elogios[index];
+    }
+  </script>
+</body>
+</html>
