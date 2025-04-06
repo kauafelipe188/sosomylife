@@ -11,7 +11,7 @@ function atualizarContador() {
     const minutos = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
     const segundos = Math.floor((diff % (1000 * 60)) / 1000);
 
-    contador.textContent = `a nossa historia começou á:(nos conhecemos) ${dias} dias, ${horas} horas, ${minutos} minutos e ${segundos} segundos 💖`;
+    contador.textContent = `a nossa historia começou á(nos conhecemos): ${dias} dias, ${horas} horas, ${minutos} minutos e ${segundos} segundos 💖`;
 }
 
 setInterval(atualizarContador, 1000);
